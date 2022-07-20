@@ -1,4 +1,4 @@
-version = "0.0.2"
+version = "0.0.3"
 
 project.extra["PluginName"] = "Discord loot poster"
 project.extra["PluginDescription"] = "Posts loot above a certain value to a discord webhook"
