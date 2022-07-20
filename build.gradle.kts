@@ -13,14 +13,14 @@ plugins {
     kotlin("jvm") version "1.6.21"
 }
 
-project.extra["GithubUrl"] = "https://github.com/tomhoogstra/mykindos-unethicalite-plugins/tree/master/release"
+project.extra["GithubUrl"] = "https://github.com/tomhoogstra/mykindos-unethicalite-plugins"
 project.extra["GithubUserName"] = "tomhoogstra"
 project.extra["GithubRepoName"] = "mykindos-unethicalite-plugins"
 
 apply<BootstrapPlugin>()
 
 allprojects {
-    group = "net.unethicalite"
+    group = "me.mykindos"
 
     project.extra["PluginProvider"] = "Mykindos"
     project.extra["ProjectSupportUrl"] = "https://discord.gg/WTvTbSPknJ"

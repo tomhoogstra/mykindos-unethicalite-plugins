@@ -1,14 +1,14 @@
 [{
   "projectUrl": "https://discord.gg/WTvTbSPknJ",
-  "provider": "unethicalite",
+  "provider": "Mykindos",
   "name": "Discord loot poster",
   "description": "Posts loot above a certain value to a discord webhook",
   "id": "discordlootposter-plugin",
   "releases": [{
     "date": "2022-07-20",
-    "sha512sum": "4329DDF4B338C3F5775B198E25AB14C0949821DBAC4016EDD74E462C9F3E13B37DC24D8CA7BE8F42A7DE51D4F33F47E7C26FEAC3BE96114388F7C86E7F10F68E",
+    "sha512sum": "A97DF89F27365EFD73369EA5341D983985BD04CBB916876E58CDD4666B4C94BED388A2F199EFF60EC5AAD82E11D579BE6E5F75DF206DB682D68FDBF1BF0A45E8",
     "version": "0.0.1",
-    "url": "https://raw.githubusercontent.com/unethicalite/unethicalite-plugins-release/master/discord-loot-poster-0.0.1.jar",
+    "url": "https://github.com/tomhoogstra/mykindos-unethicalite-plugins/blob/master/release/discord-loot-poster-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }]
