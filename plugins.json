@@ -6,13 +6,6 @@
   "id": "discordlootposter-plugin",
   "releases": [
     {
-      "date": "2022-07-20",
-      "sha512sum": "A97DF89F27365EFD73369EA5341D983985BD04CBB916876E58CDD4666B4C94BED388A2F199EFF60EC5AAD82E11D579BE6E5F75DF206DB682D68FDBF1BF0A45E8",
-      "version": "0.0.1",
-      "url": "https://github.com/tomhoogstra/mykindos-unethicalite-plugins/blob/master/release/discord-loot-poster-0.0.1.jar?raw=true",
-      "requires": "^1.0.0"
-    },
-    {
       "date": "2022-07-21",
       "sha512sum": "D7D2B124977ACCF2F09BE3B7F416237B80C1811175BFB4AF5F9BDC1E1E9A143AD06728F0E844E479DCA28589599D1941C59A038DAE937FB9A3591D9B6E33545A",
       "version": "0.0.2",
