@@ -1,5 +1,6 @@
 package me.mykindos.plugins.discordlootposter;
 
+import com.google.inject.Provides;
 import com.openosrs.http.api.discord.DiscordClient;
 import com.openosrs.http.api.discord.DiscordEmbed;
 import com.openosrs.http.api.discord.DiscordMessage;
@@ -7,26 +8,39 @@ import com.openosrs.http.api.discord.embed.ThumbnailEmbed;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.api.ItemComposition;
+import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.game.ItemManager;
 import net.runelite.client.game.ItemStack;
 import net.runelite.client.plugins.Plugin;
+import net.runelite.client.plugins.PluginDependency;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.plugins.loottracker.LootReceived;
+import net.runelite.client.plugins.loottracker.LootTrackerPlugin;
 import org.pf4j.Extension;
 
 import javax.inject.Inject;
 import java.text.DecimalFormat;
 import java.util.Collection;
 
-@Extension
+@PluginDependency(LootTrackerPlugin.class)
 @PluginDescriptor(name = "Discord loot poster", enabledByDefault = false)
+@Extension
 @Slf4j
 public class DiscordLootPosterPlugin extends Plugin
 {
 
     @Inject
     private DiscordLootPosterConfig config;
+
+    @Inject
+    private ConfigManager configManager;
+
+    @Provides
+    DiscordLootPosterConfig provideConfig(ConfigManager configManager)
+    {
+        return configManager.getConfig(DiscordLootPosterConfig.class);
+    }
 
     @Inject
     private ItemManager itemManager;
