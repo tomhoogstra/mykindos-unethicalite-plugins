@@ -16,7 +16,6 @@ import net.runelite.client.plugins.loottracker.LootReceived;
 import org.pf4j.Extension;
 
 import javax.inject.Inject;
-import java.net.http.HttpClient;
 import java.text.DecimalFormat;
 import java.util.Collection;
 
@@ -36,7 +35,8 @@ public class DiscordLootPosterPlugin extends Plugin
     private Client client;
 
     @Subscribe
-    public void onLootReceived(LootReceived lootReceived){
+    public void onLootReceived(LootReceived lootReceived)
+    {
         processLoot(lootReceived.getName(), lootReceived.getItems());
     }
 

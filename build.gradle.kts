@@ -22,7 +22,7 @@ apply<BootstrapPlugin>()
 allprojects {
     group = "net.unethicalite"
 
-    project.extra["PluginProvider"] = "unethicalite"
+    project.extra["PluginProvider"] = "Mykindos"
     project.extra["ProjectSupportUrl"] = "https://discord.gg/WTvTbSPknJ"
     project.extra["PluginLicense"] = "3-Clause BSD License"
 
@@ -51,6 +51,8 @@ allprojects {
     dependencies {
         annotationProcessor(Libraries.lombok)
         annotationProcessor(Libraries.pf4j)
+
+        implementation(group = "com.squareup.okhttp3", name = "okhttp", version = "4.9.1")
 
         compileOnly("net.unethicalite:http-api:$unethicaliteVersion+")
         compileOnly("net.unethicalite:runelite-api:$unethicaliteVersion+")
