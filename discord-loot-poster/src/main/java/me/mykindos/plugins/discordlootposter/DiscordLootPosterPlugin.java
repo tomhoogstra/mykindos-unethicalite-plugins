@@ -68,10 +68,9 @@ public class DiscordLootPosterPlugin extends Plugin
 
             DiscordClient discordClient = new DiscordClient();
 
-            DiscordMessage discordMessage = DiscordMessage.builder()
+            DiscordMessage.DiscordMessageBuilder discordMessageBuilder = DiscordMessage.builder()
                     .username(config.discordWebhookName())
-                    .content(client.getLocalPlayer().getName() + " received from " + name + ":")
-                    .build();
+                    .content(client.getLocalPlayer().getName() + " received from " + name + ":");
 
 
             long totalValue = 0;
@@ -93,14 +92,14 @@ public class DiscordLootPosterPlugin extends Plugin
                             .description("Price: " + NUMBER_FORMAT.format(total) + " gp")
                             .build();
 
-                    discordMessage.getEmbeds().add(embedObject);
+                    discordMessageBuilder.embed(embedObject);
 
                 }
             }
 
             if (config.discordMinimumValue() == 0 || totalValue >= config.discordMinimumValue())
             {
-                discordClient.message(config.discordWebhookUrl(), discordMessage);
+                discordClient.message(config.discordWebhookUrl(), discordMessageBuilder.build());
             }
         }
 
