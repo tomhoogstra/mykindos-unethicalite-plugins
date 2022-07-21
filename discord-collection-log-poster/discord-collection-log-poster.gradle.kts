@@ -1,7 +1,7 @@
-version = "0.0.3"
+version = "0.0.1"
 
-project.extra["PluginName"] = "Discord loot poster"
-project.extra["PluginDescription"] = "Posts loot above a certain value to a discord webhook"
+project.extra["PluginName"] = "Discord collection log poster"
+project.extra["PluginDescription"] = "Posts new collection log entries to a discord webhook"
 
 
 tasks {

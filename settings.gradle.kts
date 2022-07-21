@@ -26,7 +26,8 @@
 rootProject.name = "unethicalite-plugins"
 
 include("discord-loot-poster")
-
+include("discord-quest-poster")
+include("discord-collection-log-poster")
 
 for (project in rootProject.children) {
     project.apply {
@@ -37,3 +38,4 @@ for (project in rootProject.children) {
         require(buildFile.isFile) { "Project '${project.path} must have a $buildFile build script" }
     }
 }
+

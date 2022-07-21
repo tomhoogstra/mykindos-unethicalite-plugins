@@ -1,11 +1,11 @@
-package me.mykindos.plugins.discordlootposter;
+package me.mykindos.plugins.discordcollectionlogposter;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("discordquestposter")
-public interface DiscordLootPosterConfig extends Config
+@ConfigGroup("discordcollectionlogposter")
+public interface DiscordCollectionLogPosterConfig extends Config
 {
 
     @ConfigItem(
@@ -26,16 +26,6 @@ public interface DiscordLootPosterConfig extends Config
     default String discordWebhookName()
     {
         return "Unethicalite";
-    }
-
-    @ConfigItem(
-            keyName = "discordMinimumValue",
-            name = "Discord minimum value",
-            description = "Minimum value of an item to be posted to discord"
-    )
-    default int discordMinimumValue()
-    {
-        return 100000;
     }
 
 }

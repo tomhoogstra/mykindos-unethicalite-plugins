@@ -1,14 +1,40 @@
 [{
   "projectUrl": "https://discord.gg/WTvTbSPknJ",
   "provider": "Mykindos",
+  "name": "Discord collection log poster",
+  "description": "Posts new collection log entries to a discord webhook",
+  "id": "discordcollectionlogposter-plugin",
+  "releases": [{
+    "date": "2022-07-22",
+    "sha512sum": "9DD6FA8AE30471377D05A6DA68DD0D01A52E65779D887317EEB7C02F5CD1DDEE79648AE3FC62EC05773A2796FD6B30D52A94EAE0BBD17356348D5A5BDC4BCE4A",
+    "version": "0.0.1",
+    "url": "https://github.com/tomhoogstra/mykindos-unethicalite-plugins/blob/master/release/discord-collection-log-poster-0.0.1.jar?raw=true",
+    "requires": "^1.0.0"
+  }]
+}, {
+  "projectUrl": "https://discord.gg/WTvTbSPknJ",
+  "provider": "Mykindos",
   "name": "Discord loot poster",
   "description": "Posts loot above a certain value to a discord webhook",
   "id": "discordlootposter-plugin",
   "releases": [{
     "date": "2022-07-21",
-    "sha512sum": "B441E73AC49B33AFA017D8BDEF336ADCCCDE603FF5359AF521D185F37FEBDE358CDF9F50CA90C8788FE4517C817AF00775DBA55812B3551A5CE9BF9E3212D9AF",
+    "sha512sum": "3CC8931B18CD8CF4D31FEAA0FBDA452368AF6BD679AE5330336CE5C22A564C5572AD9295662BCFE4B0F1559E3DFEE258156F257762382E4EBAB8E4BCE9C4E50A",
     "version": "0.0.3",
     "url": "https://github.com/tomhoogstra/mykindos-unethicalite-plugins/blob/master/release/discord-loot-poster-0.0.3.jar?raw=true",
+    "requires": "^1.0.0"
+  }]
+}, {
+  "projectUrl": "https://discord.gg/WTvTbSPknJ",
+  "provider": "Mykindos",
+  "name": "Discord quest poster",
+  "description": "Posts quest completions to a discord webhook",
+  "id": "discordquestposter-plugin",
+  "releases": [{
+    "date": "2022-07-22",
+    "sha512sum": "69AAC20E979833F40BADDB0B4D8C030EB5FA47F1D3AA793AF76C001E831409A4907D6995177AF948ABD8EF75DF2C7633CF2551EC8BB5357E1B9D5EE29A9AE7D0",
+    "version": "0.0.1",
+    "url": "https://github.com/tomhoogstra/mykindos-unethicalite-plugins/blob/master/release/discord-quest-poster-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }]
